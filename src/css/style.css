@@ -2,7 +2,7 @@
 
 body {
     overflow: hidden;
-    min-width: 1440px;
+    min-width: 1920px;
 }
 
 main {
@@ -24,8 +24,8 @@ main::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Opacidade preta */
-  z-index: 1; /* Coloca o pseudo-elemento atrás dos elementos filhos */
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
 }
 
 header {
