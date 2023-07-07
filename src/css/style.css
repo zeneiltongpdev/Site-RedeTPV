@@ -1,47 +1,37 @@
 @import url('https://fontsgoogleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-body{
+body {
     overflow: hidden;
 }
 
-
-
-.background{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+.background {
+    background: rgba(0, 0, 0, 0.5);
     background-image: url(/src/images/Los-Santos-in-GTA-5image.avif);
     background-size: cover;
     width: 100%;
     height: 100vh;
     position: relative;
     display: inline-block;
-    
+
 }
 
-.background::before{
+.background::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.61); 
+    background-color: rgba(0, 0, 0, 0.61);
 }
 
-.background img{
+.background img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-around;
     max-width: 100%;
@@ -50,25 +40,25 @@ header{
     padding-top: 1rem;
 }
 
-.cabecalho-link{
+.cabecalho-link {
     display: flex;
     cursor: pointer;
     z-index: 1;
 }
 
-.cabecalho-link h1{
+.cabecalho-link h1 {
     color: aliceblue;
     font-size: 40px;
 }
 
-.cabecalho-link h1:hover{
-    color:  #6959CD;
+.cabecalho-link h1:hover {
+    color: #6959CD;
     transition: .3s;
 }
 
-.logo{
+.logo {
     width: 40px;
-    border: 1px solid  #6959CD;
+    border: 1px solid #6959CD;
     color: #6959CD;
     border-radius: 50%;
     display: inline-flex;
@@ -79,39 +69,38 @@ header{
     z-index: 1;
 }
 
-.logo img{
+.logo img {
     border-radius: 50%;
 }
 
-.container-text{
+.container-text {
     padding: 150px 500px 1000px 600px;
     position: relative;
     z-index: 1;
 }
 
-
-.text h3{
+.text h3 {
     color: aliceblue;
     font-size: 15px;
 }
 
-.text h1{
+.text h1 {
     color: aliceblue;
     margin-top: 10px;
 }
 
-.text p{
+.text p {
     color: aliceblue;
     font-size: 13px;
     font-weight: 300;
     margin-top: 15px;
 }
 
-.text span{
+.text span {
     color: #6959CD;
 }
 
-.redes-sociais-text{
+.redes-sociais-text {
     color: aliceblue;
     font-size: 12px;
     margin-top: 35px;
@@ -119,28 +108,28 @@ header{
     text-decoration: underline;
 }
 
-.redes-sociais{
-   padding: 0;
+.redes-sociais {
+    padding: 0;
 }
 
-.redes-sociais a{
+.redes-sociais a {
     color: #6959CD;
     text-decoration: none;
     padding: 10px;
-    
+
 }
 
-.text-login{
+.text-login {
     color: aliceblue;
     font-size: 12px;
     margin-top: 40px;
 }
 
-.text-login span{
+.text-login span {
     color: #6959CD;
 }
 
-button{
+button {
     color: #fdfdfd;
     background: transparent;
     border: solid 1px #6959CD;
@@ -153,9 +142,8 @@ button{
     margin-top: 10px;
 }
 
-button:hover{
+button:hover {
     background-color: #6959CD;
     color: aliceblue;
     transition: .5s;
 }
-
