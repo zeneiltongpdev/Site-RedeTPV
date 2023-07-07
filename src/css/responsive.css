@@ -1,10 +1,5 @@
 @media (max-width: 425px) {
 
-    body {
-        /* overflow: hidden; */
-        max-width: 425px;
-    }
-
     main {
 
         background-image: url(/src/images/mobile-tpv.png);
