@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    background-image: url(/src/images/Los-Santos-in-GTA-5image.avif);
+    background-image: url(../Los-Santos-in-GTA-5image.avif);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
