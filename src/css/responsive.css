@@ -1,12 +1,179 @@
+@media (max-width: 1024px) {
+
+    .cabecalho-link h1 {
+        font-size: 30pt;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .container-text {
+        left: 15%;
+        top: 12%;
+        width: 700px;
+        height: 230px;
+        font-size: 10pt;
+    }
+
+    .container-text .text h1 {
+        font-size: 28pt;
+    }
+
+    .container-text .text p {
+        font-size: 16pt;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28%;
+        height: 20%;
+        font-size: large;
+        border-radius: 5px;
+        left: 72%;
+        top: 15%;
+    }
+
+    .container-redes-sociais {
+        left: 8%;
+        top: 18%;
+        width: 690px;
+        height: 50px;
+        margin-top: 6.9rem;
+    }
+
+    .container-redes-sociais h3 {
+        font-size: 18pt;
+    }
+
+    .redes-sociais-icones a {
+        font-size: 14pt;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 1rem;
+        gap: 20px;
+    }
+
+    .container-text {
+        left: 10%;
+        top: 12%;
+        width: 630px;
+        height: 230px;
+        font-size: 15pt;
+        text-align: start;
+    }
+
+    .container-text .text h1 {
+        font-size: 28pt;
+    }
+
+    .container-text .text p {
+        font-size: 14pt;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28%;
+        height: 20%;
+        font-size: large;
+        border-radius: 5px;
+        left: 0%;
+    }
+
+    .container-redes-sociais {
+        left: 10%;
+        top: 22%;
+        width: 500px;
+        height: 50px;
+        margin-top: 6.9rem;
+    }
+
+    .container-redes-sociais h3 {
+        font-size: 18pt;
+    }
+
+    .redes-sociais-icones a {
+        font-size: 14pt;
+    }
+
+}
+
 @media (max-width: 425px) {
 
     main {
-
         background-image: url(/src/images/mobile-tpv.png);
+    }
 
-        /* width: 100%;
-        height: 100vh; */
+    header {
+        gap: 25px;
+    }
 
+    .container-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 3%;
+        top: 18%;
+        width: 400px;
+        height: 230px;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 16pt;
+    }
+
+    .text p {
+        font-size: 14pt;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 40px;
+        font-size: large;
+        border-radius: 5px;
+    }
+
+    .container-redes-sociais {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        left: 3%;
+        top: 30%;
+        width: 400px;
+        height: 50px;
+        margin-top: 70px;
+    }
+
+    .container-redes-sociais h3 {
+        display: none;
+    }
+
+    .redes-sociais-icones a {
+        font-size: 22pt;
+    }
+
+    .redes-sociais-icones span {
+        display: none;
     }
 
 }

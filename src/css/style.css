@@ -2,144 +2,144 @@
 
 body {
     overflow: hidden;
-    min-width: 1920px;
+    max-width: 1440px;
+    font-family: 'Poppins', sans-serif;
 }
 
 main {
-
     background-image: url(/src/images/Los-Santos-in-GTA-5image.avif);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 100vh;    
-    
+    height: 100vh;
     position: relative;
     display: inline-block;
 }
 
 main::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 1; 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
 header {
     display: flex;
-    justify-content: space-around;
-    max-width: 100%;
     align-items: center;
-    text-align: center;
-    padding-top: 1rem;
+    justify-content: center;
+    padding-top: 2rem;
+    gap: 2rem;
 }
 
 .cabecalho-link {
-    display: flex;
     cursor: pointer;
     z-index: 1;
 }
 
 .cabecalho-link h1 {
-    color: aliceblue;
-    font-size: 40px;
+    color: hsl(208, 100%, 97%);
+    font-size: 40pt;
 }
 
 .cabecalho-link h1:hover {
-    color: #6959CD;
+    color: hsl(248, 92%, 80%);
     transition: .3s;
 }
 
-.logo {
-    width: 40px;
-    border: 35px solid #6959CD;
-    color: #6959CD;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    cursor: pointer;
-    height: 40px;
-}
-
 .logo img {
+    width: 80px;
+    height: 80px;
+    color: hsl(248, 92%, 80%);
+    border: 2px solid hsl(248, 92%, 80%);
     border-radius: 50%;
-}
-
-.container-text {
-    padding: 150px 500px 1000px 600px;
+    cursor: pointer;
     position: relative;
     z-index: 1;
 }
 
-.text h3 {
-    color: aliceblue;
-    font-size: 15px;
+.container-text {
+    position: relative;
+    left: 20%;
+    top: 15%;
+    width: 900px;
+    height: 230px;
+    z-index: 1;
+    text-align: end;
+    color: hsl(208, 100%, 97%);
 }
 
-.text h1 {
-    color: aliceblue;
-    margin-top: 10px;
+.container-text .text h1 {
+    font-size: 40pt;
 }
 
-.text p {
-    color: aliceblue;
-    font-size: 13px;
-    font-weight: 300;
+.container-text .text p {
+    font-size: 21pt;
     margin-top: 15px;
 }
 
-.text span {
-    color: #6959CD;
+.container-text .text span {
+    color: hsl(248, 92%, 80%);
 }
 
-.redes-sociais-text {
-    color: aliceblue;
-    font-size: 12px;
-    margin-top: 35px;
-    padding: 10px;
-    text-decoration: underline;
-}
-
-.redes-sociais {
-    padding: 0;
-}
-
-.redes-sociais a {
-    color: #6959CD;
-    text-decoration: none;
-    padding: 10px;
-
-}
-
-.text-login {
-    color: aliceblue;
-    font-size: 12px;
-    margin-top: 40px;
-}
-
-.text-login span {
-    color: #6959CD;
+.container-text .text span:hover {
+    transition: .5s;
+    color: hsl(208, 100%, 97%);
 }
 
 button {
-    color: #fdfdfd;
+
+    width: 28%;
+    height: 30%;
+
+    color: hsl(208, 100%, 97%);
     background: transparent;
-    border: solid 1px #6959CD;
-    padding: 5px;
-    border-radius: 15px;
-    font-size: 12px;
-    width: 150px;
+    border: solid 1px hsl(248, 92%, 80%);
+    padding: 15px;
+
     cursor: pointer;
-    text-decoration: none;
-    margin-top: 10px;
+    font-size: x-large;
+    border-radius: 5px;
+
+    z-index: 1;
+    position: relative;
+    left: 0%;
+    top: 15%;
 }
 
 button:hover {
-    background-color: #6959CD;
-    color: aliceblue;
+    background-color: hsl(248, 92%, 80%);
+    color: hsl(208, 100%, 97%);
     transition: .5s;
+}
+
+.container-redes-sociais {
+    color: hsl(208, 100%, 97%);
+    font-size: 20pt;
+    position: relative;
+    left: 3%;
+    top: 40%;
+    width: 600px;
+    height: 100px;
+    z-index: 1;
+}
+
+.container-redes-sociais h3 {
+    margin-bottom: 5px;
+    color: hsl(248, 92%, 80%);
+}
+
+.redes-sociais-icones a {
+    font-size: 18pt;
+    color: hsl(208, 100%, 97%);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.redes-sociais-icones a:hover {
+    color: hsl(248, 92%, 80%);
+    transition: .3s;
 }
