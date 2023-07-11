@@ -84,7 +84,7 @@ form{
     border-radius: 50px 5px;
     background: #28292d;
     z-index: 10;
-    padding: 100px 50px;
+    padding: 30px 30px;
     display: flex;
     flex-direction: column;
 }
