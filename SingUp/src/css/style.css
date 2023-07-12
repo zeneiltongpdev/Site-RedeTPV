@@ -34,12 +34,14 @@ body{
 
 .box{
     position: relative;
+    float: left;
     width: 370px;
     height: 450px;
     padding: 50px;
     background: #1c1c1c;
     border-radius: 50px 5px;
     overflow: hidden;
+    z-index: 1;
 }
 
 .box::before{
@@ -83,7 +85,7 @@ form{
     inset: 2px;
     border-radius: 50px 5px;
     background: #28292d;
-    z-index: 10;
+    z-index: 1;
     padding: 30px 30px;
     display: flex;
     flex-direction: column;
@@ -95,12 +97,32 @@ form h2{
     font-weight: 500;
     text-align: center;
 }
+
+ .box .icon-mostrar-senha{
+    position: absolute;
+    margin: 300px;
+    padding: 5px;
+    margin-top: 230px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5;
+    z-index: 10;
+}
+
+.icon-mostrar-senha.oculta{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.icon-mostrar-senha.fixada{
+    position: fixed;
+}
     
 .inputBox{
     position: relative;
     width: 300px;
     margin-top: 35px;
-
+    padding: 0px 50px 0px 10px;
 }
 
 .inputBox input{
@@ -113,7 +135,7 @@ form h2{
     color: #23242a;
     font-size: 1rem;
     letter-spacing: 0.05rem;
-    z-index: 10;
+    z-index: 2;
 }
 
 input[type="submit"]{
@@ -166,12 +188,12 @@ input[type="submit"]:active{
     border-radius: 4px;
     transition: 0.5s;
     pointer-events: none;
-    z-index: 9;
+    z-index: 1;
 }
 
-.inputBox input:valid ~ i, .inputBox input:focus ~ i{
-    height: 40px;
-}
+.inputBox input:valid ~ i, .inputBox input:focus ~ i {
+    height: 40px; 
+} 
 
 .links{
     display: flex;

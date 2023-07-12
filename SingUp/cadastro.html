@@ -20,13 +20,12 @@
         </a>
       </div>
     </div>
-    
 
     <div class="box">
         <form action="" onsubmit="senhaOK();" method="POST" accept-charset="UTF-8">
             <h2>Cadastre-se</h2>
             <div class="inputBox">
-                <input type="text" name="brand" required>
+                <input type="text" required>
                 <span>Usuário</span>
                 <i></i>
             </div>
@@ -36,20 +35,29 @@
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="password" name="senha" required onchange="confereSenha();">
+                <input type="password" name="senha" id="user-senha" required oninput="exibirOcultarMostrarSenha();" onchange="confereSenha();">
                 <span>Crie uma Senha</span>
                 <i></i>
             </div>
-            <div class="inputBox">
-                <input type="password" name="comfirmar" required onchange="confereSenha();">
+            <div class="inputBox ">
+                <input type="password" name="comfirmar" id="user-comfirmar" required onchange="confereSenha();">
                 <span>Comfirme a senha</span>
                 <i></i>
             </div>
             <input type="submit" id="enviar-cadastro" value="Cadastrar">
-        </form>
+        </form> 
+
+        <div class="icon-mostrar-senha oculta fixada" id="mostrar-senha">
+            <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+        </div>
     </div>
+    
 
     <script src="/SingUp/src/js/VerificarSenha.js"></script>
+    <script src="/SingUp/src/js/MostrarSenha.js"></script>
+    <script src="/SingUp/src/js/ComfirmarMostrarSenha.js"></script>
+    <script src="/SingUp/src/js/MostrarSenhaInteração.js"></script>
+    <script src="/SingUp/src/js/ComfirmarMostraSenhaInteração.js"></script>
 
 </body>
 </html>

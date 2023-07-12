@@ -1,5 +1,3 @@
- 
-
 function confereSenha() {
     const senha = document.querySelector('input[name=senha]');
     const comfirmar = document.querySelector('input[name=comfirmar]');

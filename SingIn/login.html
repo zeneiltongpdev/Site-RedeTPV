@@ -31,7 +31,7 @@
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="password" required>
+                <input type="password" id="senha" required oninput="exibirOcultarMostrarSenha();">
                 <span>Senha</span>
                 <i></i>
             </div>
@@ -41,6 +41,12 @@
                 <a href="/SingUp/cadastro.html">Cadastre-se</a>
             </div>
         </form>
+        <div class="icon-mostrar-senha oculta fixada" id="mostrar-senha">
+            <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+        </div>
     </div>
+
+    <script src="/SingIn/js/MostrarSenhaLogin.js"></script>
+
 </body>
 </html>
