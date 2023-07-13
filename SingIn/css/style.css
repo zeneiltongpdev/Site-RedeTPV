@@ -134,7 +134,7 @@ form h2{
     color: #23242a;
     font-size: 1rem;
     letter-spacing: 0.05rem;
-    z-index: 1;
+    z-index: 2;
 }
 
 input[type="submit"]{
@@ -187,7 +187,7 @@ input[type="submit"]:active{
     border-radius: 4px;
     transition: 0.5s;
     pointer-events: none;
-    z-index: 1;
+    
 }
 
 .inputBox input:valid ~ i, .inputBox input:focus ~ i{

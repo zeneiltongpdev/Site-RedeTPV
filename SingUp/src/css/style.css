@@ -188,12 +188,12 @@ input[type="submit"]:active{
     border-radius: 4px;
     transition: 0.5s;
     pointer-events: none;
-    z-index: 1;
+    
 }
 
-.inputBox input:valid ~ i, .inputBox input:focus ~ i {
+.inputBox input:valid ~ i, .inputBox input:focus ~ i{
     height: 40px; 
-} 
+}
 
 .links{
     display: flex;
